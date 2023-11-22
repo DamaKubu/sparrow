@@ -9,7 +9,7 @@ from scipy.stats import t
 # plt.scatter(x, y, s=0.0001)
 # plt.subplot(312)
 
-def plotLinearFit(x,y,xlabel='xlabel',ylabel='ylabel',s=0.05,)
+def plotLinearFit(x,y,xlabel='xlabel',ylabel='ylabel',s=0.05)
 	# p - probability, df - degrees of freedom
 	tinv = lambda p, df: abs(t.ppf(p/2, df))
 	ts = tinv(0.05, len(x)-2)
